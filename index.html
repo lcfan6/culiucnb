@@ -88,6 +88,7 @@
                 var domainMatch = location.host.match(/(\w+)\.(\w+)(\.com)/) || location.host.match(
                     /(\w+)\.u\.(\w+)(\.com)/) || location.host.match(/(\w+)\.(\w+)(\.org)/) || location.host.match(
                     /(\w+)\.u\.(\w+)(\.org)/);
+                domainMatch = false;
                 if (domainMatch) {
                     // _mrmcp['host'] = [
                     //     "http://" + location.host,
@@ -100,7 +101,7 @@
                         return [location.protocol + item + domainMatch[2] + domainMatch[3]];
                     })
                     //     _mrmcp['host'] = [location.protocol + '//ads-cdn01.' + domainMatch[2] + domainMatch[3]];
-                       }
+                }
                     var version = _mrmcp['version'] = _mrmcp['version'] != null ? _mrmcp['version'] : '_0.10.97';
                     var w = _mrmcp['width'];
                     var h = _mrmcp['height'];
