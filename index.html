@@ -9,9 +9,17 @@
     <title>楚楚推，动动手指就创业</title>
 </head>
 
-<body style="margin:0;padding:0;overflow:hidden;border:0">
-
-
+<body style="margin:0;padding:0;overflow:hidden;border:0;position:relative">
+    <div style="position:fixed;right:10px;bottom:10px;height:80px;width:80px;z-index:9999;">
+        <img id="qrcode_6ee85i479h8" src="" alt="" style="width:100%;height:100%;">
+    </div>
+    <script src="./jquery-3.2.1.min.js"></script>
+    <script>
+        $(function() {
+            var $qrcode = $('#qrcode_6ee85i479h8');
+            $qrcode.attr('src', 'https://www.chuchutui.com/img/code_cctui.png');
+        });
+    </script>
     <script>
         var _mrmcp = {
             "redirect_url": "%LINK%?redir=",
